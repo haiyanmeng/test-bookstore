@@ -4,4 +4,4 @@ metadata:
   name: cs
   annotations:
     reconciler: root
-  namespace: default
+  namespace: bookstore
