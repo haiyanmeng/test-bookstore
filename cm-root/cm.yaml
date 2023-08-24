@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: cs
+  annotations:
+    reconciler: root
+  namespace: default
