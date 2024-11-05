@@ -1,0 +1,15 @@
+apiVersion: configsync.gke.io/v1beta1
+kind: RootSync
+metadata:
+  name: root-sync-cluster-10
+  namespace: config-management-system
+  annotations:
+    configsync.gke.io/cluster-name-selector: cluster-10
+spec:
+  sourceFormat: unstructured
+  git:
+    repo: https://github.com/haiyanmeng/test-bookstore
+    branch: main
+    dir: bookstore2-cluster-10
+    auth: none
+
